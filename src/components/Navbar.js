@@ -18,9 +18,9 @@ const handleClick = () => setClick(!click)
         </a>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <FaTimes size={20} style={{ color: "#353535" }} />
+            <FaTimes size={20} style={{ color: "#ffffff" }} />
           ) : (
-            <FaBars size={20} style={{ color: "#353535" }} />
+            <FaBars size={20} style={{ color: "#ffffff" }} />
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>

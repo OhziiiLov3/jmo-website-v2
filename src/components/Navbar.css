@@ -27,6 +27,8 @@
 .header .navbar img{
     width: 130px;
     height: auto;
+    filter: invert(100%);
+     -webkit-filter: invert(100%);
     
 }
 
@@ -46,19 +48,21 @@
 
 .hamburger{
     display: none;
+   
 }
 
 
 @media screen and (max-width:940px){
     .header{
         max-width:100%;
-        background-color: rgb(255, 255, 255);
+        background-color: #3030309d;
     }
     .header .navbar{
         max-width: 100%;
     }
     .hamburger{
         display: block;
+        
     }
     .nav-menu{
         position: fixed;
