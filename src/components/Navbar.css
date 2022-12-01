@@ -6,6 +6,7 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
+   
 }
 
 .header .navbar{
