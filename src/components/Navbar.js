@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import logo from "./images/JMO_Logo.png";
+import { Link} from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import './Navbar.css'
@@ -14,9 +15,16 @@ const closeMenu =()=> setClick(false)
   return (
     <div className="header">
       <nav className="navbar">
-        <a href="/" className="logo">
+        <Link
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="logo"
+        >
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
             <FaTimes size={20} style={{ color: "#ffffff" }} />
@@ -26,24 +34,52 @@ const closeMenu =()=> setClick(false)
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <a href="/" onClick={closeMenu}>
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={closeMenu}
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#about" onClick={closeMenu}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={closeMenu}
+            >
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#testimonials" onClick={closeMenu}>
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={closeMenu}
+            >
               Testimonials
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#appointment" onClick={closeMenu}>
+            <Link
+              to="appointment"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              onClick={closeMenu}
+            >
               Appointment
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
