@@ -17,6 +17,12 @@
 
 }
 
+ .button {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
 .hero .content {
     height: 100%;
     display: flex;

@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2.8rem;
 }
 
 .about .col-2 p:first-of-type {
@@ -43,8 +43,9 @@
     font-weight: 600;
 }
 
-.about button{
-    margin-top: 1rem;
+.about button, a{
+    padding: 1rem;
+    margin-top: 1.8rem;
 }
 
 @media screen and (max-width:940px){
@@ -59,7 +60,7 @@
         width: 40vw;
     }
     .about .container .col-2{
-        padding: 0;
+        padding: 1;
     }
     .about button{
         margin-bottom: 0;
