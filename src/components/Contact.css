@@ -1,0 +1,80 @@
+.contact {
+    margin: auto;
+    text-align: center;
+    background-size: contain;
+    width: 1240px;
+    padding: 1rem 0rem;
+}
+
+
+.contact p {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
+
+}
+
+.contact-form label{
+    margin-bottom: .5rem;
+}
+
+ .contact-form form{
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+.contact-input , .textarea{
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size:  1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #eee;
+    outline: 0 ;
+    box-shadow: none ;
+    font-weight: 800;
+  }
+  .contact input:focus,
+  .contact textarea:focus {
+      color: rgb(147, 203, 73);
+      border-bottom: .125rem solid var(--primary-color);
+  }
+
+  .textarea{
+    height: 11rem;
+  }
+
+
+
+
+
+
+
+
+
+.error-message {
+    color: rgba(22, 22, 22);
+    background: rgb(147, 203, 73, .7);
+    text-align: left;
+
+}
+
+.success-message {
+    font-weight: 900;
+    color: rgb(147, 203, 73);
+} 
+
+
+/* ***** CONTACT MEDIA **** */
+ @media screen and (max-width:940px) {
+     .contact{
+         grid-template-columns: 1fr;
+     }
+
+     .contact{
+         width: 100%;
+     }
+
+ }

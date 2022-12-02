@@ -56,3 +56,20 @@
         height: auto;
     }
 }
+
+
+/* ***** CONTACT MEDIA **** */
+
+@media(max-width:768px) {
+    .contact-form {
+        overflow-x: hidden;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+
+    .contact-form p {
+        padding: 0 0.4rem;
+    }
+}

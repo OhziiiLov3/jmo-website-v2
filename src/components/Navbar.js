@@ -81,6 +81,18 @@ const closeMenu =()=> setClick(false)
               Appointment
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              onClick={closeMenu}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
