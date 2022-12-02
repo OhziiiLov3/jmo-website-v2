@@ -4,7 +4,7 @@ import './Appointments.css'
 
 const Appointments = () => {
   return (
-    <div className="appointment">
+    <div className="appointment" id='appointment'>
       <div className="container">
         <div className="col-1">
           <p>NO more temporary diets|NO more powders|NO more quitting</p>

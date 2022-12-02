@@ -9,6 +9,7 @@ const [click, setClick] = useState(false)
 
 
 const handleClick = () => setClick(!click)
+const closeMenu =()=> setClick(false)
 
   return (
     <div className="header">
@@ -25,16 +26,24 @@ const handleClick = () => setClick(!click)
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="/" onClick={closeMenu}>
+              Home
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/about">About</a>
+            <a href="#about" onClick={closeMenu}>
+              About
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/testimonials">Testimonials</a>
+            <a href="#testimonials" onClick={closeMenu}>
+              Testimonials
+            </a>
           </li>
           <li className="nav-item">
-            <a href="/appointment">Appointment</a>
+            <a href="#appointment" onClick={closeMenu}>
+              Appointment
+            </a>
           </li>
         </ul>
       </nav>
