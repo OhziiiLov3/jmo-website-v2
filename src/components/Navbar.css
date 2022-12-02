@@ -21,7 +21,8 @@
 }
 
 .header .nav-menu a {
-    color: #ffffff;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .header .navbar img{
@@ -39,11 +40,12 @@
 .header .nav-item{
     padding: 1rem;
     font-weight: 500;
+    
 }
 
 .header .nav-item a:hover{
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .hamburger{

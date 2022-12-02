@@ -13,8 +13,11 @@
 }
 
 .about .container img {
-    width: 320px;
+    width: 300px;
     height: auto;
+    border-radius: 50%;
+    padding: 0rem;
+    margin: auto;
 
 }
 
