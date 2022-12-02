@@ -55,7 +55,7 @@
     border: 1px solid var(--primary-dark);
 }
 
-@media screen and (max-width:40rem){
+@media screen and (max-width:940px){
     
     .hero .content p:nth-child(3){
         font-size: 2.6rem;
