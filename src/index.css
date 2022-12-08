@@ -61,7 +61,12 @@ a{
   background-color: var(--primary-color);
 }
 
-
+/* @media screen and (max-width:960px){
+   .media-screen{
+      max-width: 100%;
+   }
+  
+} */
 
 
 

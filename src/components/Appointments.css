@@ -6,7 +6,7 @@
 }
 
 .appointment .container{
-    width: 1240px;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -45,11 +45,14 @@
 
    
 
-@media screen and (max-width:940px){
+@media screen and (max-width: 960px){
     .appointment .container{
         max-width: 100%;
         grid-template-columns: 1fr;
         grid-gap: 30px;
+    }
+    .appointment .col-2{
+        width: 100%;
     }
     .appointment .App{
         width: 100%;

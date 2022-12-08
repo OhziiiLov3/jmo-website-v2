@@ -50,7 +50,7 @@ const closeMenu =()=> setClick(false)
               to="about"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-70}
               duration={500}
               onClick={closeMenu}
             >
@@ -86,7 +86,7 @@ const closeMenu =()=> setClick(false)
               to="contact"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={-70}
               duration={500}
               onClick={closeMenu}
             >

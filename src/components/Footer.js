@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div className='footer' id='footer'>
         <div className="container">
-            <ul>
+            <ul className='nav-menu'>
                 <li className="nav-item">
-                    <a href="/">Home</a>
+                    <a href="#hero">Home</a>
                 </li>
                 <li className="nav-item">
                     <a href="#about">About</a>

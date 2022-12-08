@@ -2,7 +2,7 @@
     margin: auto;
     text-align: center;
     background-size: contain;
-    width: 1240px;
+    width: 100%;
     padding: 1rem 0rem;
 }
 
@@ -13,7 +13,10 @@
     font-weight: 600;
 
 }
-
+.contact h2 {
+    font-size: 3rem;
+    text-align: center;
+}
 .contact-form label{
     margin-bottom: .5rem;
 }
@@ -44,14 +47,10 @@
 
   .textarea{
     height: 11rem;
+    width: 100%;
+    resize: none;
+    border-bottom: .125rem solid var(--overlay);
   }
-
-
-
-
-
-
-
 
 
 .error-message {
@@ -68,13 +67,13 @@
 
 
 /* ***** CONTACT MEDIA **** */
- @media screen and (max-width:940px) {
+ @media screen and (max-width: 960px) {
      .contact{
          grid-template-columns: 1fr;
      }
 
      .contact{
-         width: 100%;
+         max-width: 100%;
      }
 
  }

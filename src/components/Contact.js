@@ -45,68 +45,70 @@ const sendEmail = (serviceID, templateID, variables, userID) => {
 
   return (
     <div className="contact" id="contact">
-      <h2>Contact</h2>
-      <span className="line"></span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <span className="success-message">{successMessage}</span>
-      <div className="contact-form">
-        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-          <input
-            id="name"
-            type="text"
-            className="contact-input"
-            placeholder="Name"
-            name="name"
-            aria-invalid={errors.name ? "true" : "false"}
-            {...register("name", {
-              required: "Please enter your name",
-              maxLength: {
-                value: 20,
-                message: "Please enter a name with fewer than 20 characters",
-              },
-            })}
-          />
-          <input
-            id="email"
-            type="email"
-            className="contact-input"
-            placeholder="Email"
-            name="email"
-            ria-invalid={errors.email ? "true" : "false"}
-            {...register("email", {
-              required: "Please provide you email",
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: "invalid Email",
-              },
-            })}
-          />
+      <div className="container">
+        <h2>Contact</h2>
+        <span className="line"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <span className="success-message">{successMessage}</span>
+        <div className="contact-form">
+          <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+            <input
+              id="name"
+              type="text"
+              className="contact-input"
+              placeholder="Name"
+              name="name"
+              aria-invalid={errors.name ? "true" : "false"}
+              {...register("name", {
+                required: "Please enter your name",
+                maxLength: {
+                  value: 20,
+                  message: "Please enter a name with fewer than 20 characters",
+                },
+              })}
+            />
+            <input
+              id="email"
+              type="email"
+              className="contact-input"
+              placeholder="Email"
+              name="email"
+              ria-invalid={errors.email ? "true" : "false"}
+              {...register("email", {
+                required: "Please provide you email",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "invalid Email",
+                },
+              })}
+            />
 
-          <input
-            id="phone"
-            text="text"
-            className="contact-input"
-            placeholder="Phone Number"
-            name="phone"
-            aria-invalid={errors.phone ? "true" : "false"}
-            {...register("phone", {
-              required: "Please enter your phone number",
-            })}
-          />
-          <textarea
-            row="6"
-            id="description"
-            text="text"
-            className="textarea"
-            placeholder="What are your goals?!"
-            name="description"
-            aria-invalid={errors.description ? "true" : "false"}
-            {...register("description", {
-              required: "Please leave a detailed message...",
-            })}
-          />
-          <button className="button">Contact</button>
-        </form>
+            <input
+              id="phone"
+              text="text"
+              className="contact-input"
+              placeholder="Phone Number"
+              name="phone"
+              aria-invalid={errors.phone ? "true" : "false"}
+              {...register("phone", {
+                required: "Please enter your phone number",
+              })}
+            />
+            <textarea
+              row="6"
+              id="description"
+              text="text"
+              className="textarea"
+              placeholder="What are your goals?!"
+              name="description"
+              aria-invalid={errors.description ? "true" : "false"}
+              {...register("description", {
+                required: "Please leave a detailed message...",
+              })}
+            />
+            <button className="button">Contact</button>
+          </form>
+        </div>
       </div>
     </div>
   );
